@@ -14,6 +14,10 @@
 		7BB040392C18E505009A149F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7BB040382C18E505009A149F /* Base */; };
 		7BB040412C18E533009A149F /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040402C18E533009A149F /* CalculatorPresenter.swift */; };
 		7BB040432C18E56E009A149F /* CalculatorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040422C18E56E009A149F /* CalculatorBuilder.swift */; };
+		7BB040472C18E97A009A149F /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040462C18E97A009A149F /* UIColor + Extensions.swift */; };
+		7BB040492C18EC12009A149F /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040482C18EC12009A149F /* UIView + Extensions.swift */; };
+		7BB0404E2C18ECB1009A149F /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */; };
+		7BB040502C18F408009A149F /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0404F2C18F408009A149F /* SystemImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		7BB0403A2C18E505009A149F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB040402C18E533009A149F /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
 		7BB040422C18E56E009A149F /* CalculatorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBuilder.swift; sourceTree = "<group>"; };
+		7BB040462C18E97A009A149F /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		7BB040482C18EC12009A149F /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
+		7BB0404F2C18F408009A149F /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		7BB0402B2C18E503009A149F /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
-				7BB0402C2C18E503009A149F /* AppDelegate.swift */,
-				7BB0402E2C18E503009A149F /* SceneDelegate.swift */,
+				7BB0403A2C18E505009A149F /* Info.plist */,
+				7BB0404C2C18EC31009A149F /* Common */,
+				7BB040512C190631009A149F /* Enums */,
+				7BB0404B2C18EC22009A149F /* CalculatorViewController */,
+				7BB0404A2C18EC17009A149F /* Extensions */,
+			);
+			path = Task1;
+			sourceTree = "<group>";
+		};
+		7BB0404A2C18EC17009A149F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BB040482C18EC12009A149F /* UIView + Extensions.swift */,
+				7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */,
+				7BB040462C18E97A009A149F /* UIColor + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7BB0404B2C18EC22009A149F /* CalculatorViewController */ = {
+			isa = PBXGroup;
+			children = (
 				7BB040302C18E503009A149F /* CalculatorViewController.swift */,
 				7BB040402C18E533009A149F /* CalculatorPresenter.swift */,
 				7BB040422C18E56E009A149F /* CalculatorBuilder.swift */,
+			);
+			path = CalculatorViewController;
+			sourceTree = "<group>";
+		};
+		7BB0404C2C18EC31009A149F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7BB0402C2C18E503009A149F /* AppDelegate.swift */,
+				7BB0402E2C18E503009A149F /* SceneDelegate.swift */,
 				7BB040352C18E505009A149F /* Assets.xcassets */,
 				7BB040372C18E505009A149F /* LaunchScreen.storyboard */,
-				7BB0403A2C18E505009A149F /* Info.plist */,
 			);
-			path = Task1;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7BB040512C190631009A149F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7BB0404F2C18F408009A149F /* SystemImage.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB040492C18EC12009A149F /* UIView + Extensions.swift in Sources */,
 				7BB040312C18E503009A149F /* CalculatorViewController.swift in Sources */,
 				7BB0402D2C18E503009A149F /* AppDelegate.swift in Sources */,
+				7BB0404E2C18ECB1009A149F /* UIStackView + Extensions.swift in Sources */,
 				7BB040412C18E533009A149F /* CalculatorPresenter.swift in Sources */,
+				7BB040472C18E97A009A149F /* UIColor + Extensions.swift in Sources */,
 				7BB040432C18E56E009A149F /* CalculatorBuilder.swift in Sources */,
 				7BB0402F2C18E503009A149F /* SceneDelegate.swift in Sources */,
+				7BB040502C18F408009A149F /* SystemImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
