@@ -22,6 +22,10 @@ extension UIColor {
         }
     }
     
+    static var darkWhiteColor: UIColor {
+        return UIColor(named: "darkWhiteColor") ?? .white
+    }
+    
     static var backgroundColor: UIColor {
         return UIColor(named: "backgroundCalculatorColor") ?? .white
     }

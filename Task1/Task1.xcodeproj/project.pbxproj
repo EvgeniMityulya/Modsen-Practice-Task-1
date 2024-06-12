@@ -18,6 +18,9 @@
 		7BB040492C18EC12009A149F /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040482C18EC12009A149F /* UIView + Extensions.swift */; };
 		7BB0404E2C18ECB1009A149F /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */; };
 		7BB040502C18F408009A149F /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0404F2C18F408009A149F /* SystemImage.swift */; };
+		7BB040532C1996E2009A149F /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040522C1996E2009A149F /* Operation.swift */; };
+		7BB040552C199ADF009A149F /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB040542C199ADF009A149F /* Inter.ttf */; };
+		7BB040582C199B17009A149F /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB040572C199B17009A149F /* UIFont + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		7BB040482C18EC12009A149F /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
 		7BB0404F2C18F408009A149F /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
+		7BB040522C1996E2009A149F /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		7BB040542C199ADF009A149F /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		7BB040572C199B17009A149F /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB040482C18EC12009A149F /* UIView + Extensions.swift */,
+				7BB040572C199B17009A149F /* UIFont + Extensions.swift */,
 				7BB0404D2C18ECB1009A149F /* UIStackView + Extensions.swift */,
 				7BB040462C18E97A009A149F /* UIColor + Extensions.swift */,
 			);
@@ -101,6 +108,7 @@
 				7BB0402C2C18E503009A149F /* AppDelegate.swift */,
 				7BB0402E2C18E503009A149F /* SceneDelegate.swift */,
 				7BB040352C18E505009A149F /* Assets.xcassets */,
+				7BB040562C199AE5009A149F /* Fonts */,
 				7BB040372C18E505009A149F /* LaunchScreen.storyboard */,
 			);
 			path = Common;
@@ -110,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				7BB0404F2C18F408009A149F /* SystemImage.swift */,
+				7BB040522C1996E2009A149F /* Operation.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		7BB040562C199AE5009A149F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BB040542C199ADF009A149F /* Inter.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB040362C18E505009A149F /* Assets.xcassets in Resources */,
+				7BB040552C199ADF009A149F /* Inter.ttf in Resources */,
 				7BB040392C18E505009A149F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,7 +205,9 @@
 				7BB040492C18EC12009A149F /* UIView + Extensions.swift in Sources */,
 				7BB040312C18E503009A149F /* CalculatorViewController.swift in Sources */,
 				7BB0402D2C18E503009A149F /* AppDelegate.swift in Sources */,
+				7BB040532C1996E2009A149F /* Operation.swift in Sources */,
 				7BB0404E2C18ECB1009A149F /* UIStackView + Extensions.swift in Sources */,
+				7BB040582C199B17009A149F /* UIFont + Extensions.swift in Sources */,
 				7BB040412C18E533009A149F /* CalculatorPresenter.swift in Sources */,
 				7BB040472C18E97A009A149F /* UIColor + Extensions.swift in Sources */,
 				7BB040432C18E56E009A149F /* CalculatorBuilder.swift in Sources */,
