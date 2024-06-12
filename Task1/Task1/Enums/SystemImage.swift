@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - System Images
 enum SystemImage: String, CaseIterable {
     case plusMinus = "plus.forwardslash.minus"
     case minus     = "minus"

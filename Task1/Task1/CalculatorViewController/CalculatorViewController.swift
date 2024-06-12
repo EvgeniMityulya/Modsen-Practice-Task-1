@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol CalculatorInput: AnyObject {
     var inputLabelText: String? { get }
     func resetLabels()
@@ -22,8 +21,7 @@ final class CalculatorViewController: UIViewController {
     private var horizontalRows = [UIStackView]()
     private var calculatorButtons = [UIButton]()
     
-    var buttonSize: CGFloat = 0
-    
+    // buttons stack
     private lazy var calculatorStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -34,6 +32,16 @@ final class CalculatorViewController: UIViewController {
         return stackView
     }()
     
+    // input and output fields stack
+    private lazy var outputStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+
     private lazy var inputLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.Inter(ofSize: 45, style: .regular)
@@ -43,14 +51,6 @@ final class CalculatorViewController: UIViewController {
         return label
     }()
     
-    private lazy var outputStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.alignment = .fill
-        stackView.distribution = .fillEqually
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
     
     private lazy var resultLabel: UILabel = {
         let label = UILabel()
@@ -98,10 +98,9 @@ extension CalculatorViewController: CalculatorInput {
         self.inputLabel.text = "0"
         self.resultLabel.text = ""
     }
-    
-    
 }
 
+// MARK: - UI Configuration
 private extension CalculatorViewController {
     func setupUI() {
         self.createCalculatorButtons()

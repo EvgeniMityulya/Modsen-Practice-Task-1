@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Default operations
 enum Operation {
     case add
     case subtract

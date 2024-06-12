@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIColor {
-    struct CalculatorButtons {
+    enum CalculatorButtons {
         static var green: UIColor {
             return UIColor(named: "greenButtonColor") ?? .green
         }
