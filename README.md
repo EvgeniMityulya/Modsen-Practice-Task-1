@@ -5,11 +5,13 @@
 
 ## Скриншоты
 
+### Iphone 15
 <p align="center">
   <img src="https://github.com/EvgeniMityulya/Modsen-Practice-Task-1/assets/90418758/adbb8811-a9bc-47ad-984f-83ecda40e8b2" width="300">
   <img src="https://github.com/EvgeniMityulya/Modsen-Practice-Task-1/assets/90418758/2cf9d222-7104-4ee0-b5c7-008600cfbf12" width="300">
 </p>
 
+### Iphone 8 Plus
 <p align="center">
   <img src="https://github.com/EvgeniMityulya/Modsen-Practice-Task-1/assets/90418758/ae2a9c35-efc2-4807-8e57-3f7f90ac4d16" width="300">
   <img src="https://github.com/EvgeniMityulya/Modsen-Practice-Task-1/assets/90418758/826463f6-9afe-41c5-a53f-f92ea1ac55eb" width="300">
